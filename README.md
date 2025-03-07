@@ -99,7 +99,7 @@ Links:
 
  #### Developer tools and documentation
 <details closed>
-<summary>root/Apps/developer</summary>
+<summary>root/Apps/dev</summary>
 
 ``` 
 	├── apps/
@@ -144,7 +144,7 @@ Links:
 
  #### Calendar portion of the application
 <details closed>
-<summary>root/Apps/calendar</summary>
+<summary>root/Apps/cal</summary>
 
 ``` 
 	├── apps/
@@ -182,7 +182,7 @@ Links:
 ``` 
 	├── apps/
         └── pdf/
-			├── .env                                  # Environment variables
+			├── .env                         # Environment variables
 			├── .gitignore                    # App-specific git ignore
             ├── .prettierrc.json              # App-specific prettier config
 			├── build/                        # Build output directory
@@ -513,8 +513,6 @@ Once deployed, you will have access to a demo version of the CRM software to tes
 
 ## Technical Overview
 ### Custom Turbo.Repo Commands
-
-
 
 > [!TIP]
 > Turbo Repo has some great features, but it dropped the ball in couple of depts, that was severe enough to warrant the effort to just recreate turbo repo with custom built, use case functionality to greater serve this project. The biggest hurdle was our platform remix. If you've used remix before, you know it can get... finnaky at times. Although it has gotten a lot better. 
