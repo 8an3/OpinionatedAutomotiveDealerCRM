@@ -568,21 +568,37 @@ meth clean:all
 
 <details closed>
 <summary>Roadmap</summary>
+
 - Finish off turbo repo recreation that would include all functionality currently missing
+
 - Segregate each dept into its own remix application
+
 - Create and complete client portal for dealer customers, will include a second login authentication for ease of use for dealer clients as this will ease the burden for account creation and memorizing password
+
 - Client portal will include appointment scheduler for both sales and service ( to allow the client to schedule their own appointments ), part and accessories order, sales purchases and service appointment status updates in real time, service wait times viewer, customer ping system once service unit is ready ( reminiscent of restaraunts with people waiting for tables with the "pucks" the give out, but on the clients portal service dashboard, which would also include est completion times ) and much more
+
 - Payment processing through application, this will not be included till the costs are offset by generated revenue. Once inlcuded dealer clients will be able to place deposits on units after hours, pay for bills at their leisure ( for example if they drop off their unit for a service 2 - 3 days out, and go on vacation or extended service vists ie engine replacement and the customers isnt expected to pick up the second the service is completed. ) Will also enable sales staff to take deposits even when their aren't enough terminals avaialable, PAC, service depts to easily take payments without credit card machines, etc.
+
 - Correct bugs in newly designed service scheduler ( This feature design will be an industry first. )
+
 - Finish off dev control panel ( as this has been put on the backburner to focus on the dealers side of the app ) which would enable remote control of all dealers databases ( as each dealer will have their own database ), automate dealer intake, including but not limited dealer server and database creation that would send all critical data points automatically to just signed up dealer removing the need for system admins to administer this process
+
 - Implement a wide variety of ai assisted tools including but not ltd too, sales emails, calls, text message scripting, sales analysis and projection including setting realistic goals for sales people and dept along with the other depts, in app voice to text generation, and much more.
+
 - Create and test in house infastructure / server option to add to on the cloud option ( Only available option currently ) to allow dealers to continued access even if internet services drop do to various reasons
+
 - Auto print unit signs from the unit ui
+
 - BDC Center 
+
 - Finalize sales follow-up automation, again different implmentation from current industry standard making it polarizing experience as far as end user experience is concerned.
+
 - A cross-platform Ad Manager designed to serve all departments, ensuring seamless campaign management across the organization
+
 - Backburner: redesign data loading across app in congurant with how each job role ingest data, would allow shorter load times and less loading bottle necks
+
 - Blue book implementation: Currently available market options have huge pay wall. Will be implemented once enough dealers sign up for the app to cover large barrier of cost of entry 
+
 </details>
 
 ## Challenges & Solutions
