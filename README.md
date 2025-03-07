@@ -453,6 +453,29 @@ cd OpinionatedDealerCRM
 ```sh
 pnpm i 
 ```
+### fresh vercel server also needs these intalls 
+
+If your server dependencies don't already include the above update it by copy and pasting the code from below.
+
+```sh
+ pnpm i base32-decode 
+ pnpm i jos
+pnpm i webapi
+
+serverDependenciesToBundle: [
+    "axios",
+    "@azure/msal-react",
+    "Path2D",
+    "chalk",
+    'jose',
+    "crypto",
+    "@pdfme",
+    "remix-auth-totp",
+    "@epic-web/totp",
+    "base32-encode",
+    "to-data-view"
+  ],
+```
 4. Fill in required env variables in the .env file ( Available once code is completed )
 
 - [.env](https://github.com/8an3/OpinionatedAutomotiveDealerCRM)
