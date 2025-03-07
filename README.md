@@ -10,7 +10,7 @@
 	<img src="https://img.shields.io/github/languages/top/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&color=00ADD8" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&color=00ADD8" alt="repo-language-count">
 </p>
-	
+
 
 #### Built with:
 
@@ -494,6 +494,10 @@ meth upgrade:patch
 ## Usage
 
 Once deployed, you will have access to a demo version of the CRM software to test. There are several accounts to try out with varying levels of access to different parts of the application:
+
+<details closed>
+<summary>Details... </summary>
+
 - Service: "service@email.com"
 - Parts: "parts@email.com"
 - Sales: "sales@email.com"
@@ -505,18 +509,29 @@ Once deployed, you will have access to a demo version of the CRM software to tes
 - Receiving: "receiving@email.com"
 - Delivery driver: "delivery_driver@email.com"
 
+</details>
+
 ## Technical Overview
 ### Custom Turbo.Repo Commands
+
+
 
 > [!TIP]
 > Turbo Repo has some great features, but it dropped the ball in couple of depts, that was severe enough to warrant the effort to just recreate turbo repo with custom built, use case functionality to greater serve this project. The biggest hurdle was our platform remix. If you've used remix before, you know it can get... finnaky at times. Although it has gotten a lot better. 
 > 
+
+<details closed>
+<summary>Details... </summary>
+
 > We didn't want to start messing around, screwing up the build portion of remixs functionality. We tried to find someone who had combined more than one remix project, to be built into one. So we didn't know what we were getting ourselves into. 
 > 
 > Also, it was a tad annoying to find out that vercel, who built turbo repo, as far as I know, doesn't just sense the projects in the apps > folder and deploy them. Ontop of that, at time of adoption the docs were incomplete and didn't even inform us on how to deploy to their own platform. Which I thought was going to be in addition to their super effeicent way to go about dev business and start 30 projects at once and all have dev servers running by the time your one project is ready. A swing and a miss in my books. This may have changed by now, but when we took it on it was only till we completely moved the entire project over, that we noticed their documentation was missing... some information. And had an > annoying time deploying, without all the idiocincrices of remix to throw into it as well. 
 > 
 > By creating it ourselves we wanted to take it a step further. We wanted to segregate our code, for several reasons, but at deployment keep it all under one deployment when its pushed to vercel. Thankfully on our first attempt, we were able to take 5 remix projects, and deploy it as one single application on vercel. Since our recreation worked so well for our use case, we called it meth. It's like turbo repo, but on meth and > does far more for us while making our day to day just a little bit easier.
 > 
+
+</details>
+
 
 <details closed>
 <summary>Details... </summary>
