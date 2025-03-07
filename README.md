@@ -12,7 +12,6 @@
 </p>
 	
 
-Prisma schema loaded from prisma\schema.prisma
 #### Built with:
 
 <p align="left">
