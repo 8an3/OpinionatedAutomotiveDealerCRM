@@ -12,7 +12,7 @@
 </p>
 	
 
-#### On [Github](https://github.com/8an3/OpinionatedCRM.git) and built with:
+#### Built with:
 
 <p align="left">
 	<img src="https://img.shields.io/badge/Remix-000000.svg?style=for-the-badge&logo=remix&logoColor=white" alt="remix">
@@ -419,14 +419,14 @@ Links:
 
 ## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 Before getting started with DSA, ensure your runtime environment meets the following requirements:
 
 - **Programming Language:** Typescript
 - **Package Manager:** pnpm
 - **Deployment env:** Vercel
-- **Local dev DB:** PostgreSQL
+- **Local dev nad prod DB:** PostgreSQL
 
 ## Installation
 
@@ -451,8 +451,12 @@ cd OpinionatedDealerCRM
 ```sh
 pnpm i 
 ```
-4. Fill in required env variables in the .env file
+4. Fill in required env variables in the .env file ( Available once code is completed )
+
+- [.env](https://github.com/8an3/OpinionatedAutomotiveDealerCRM)
+
 5. Push and seed database 
+Note: meth is a recreated version of Turbo Repo. Locally you can either set the env var's to point towards the with pnpm link --global in the root directory, the global flag can be dropped for use in this project only. If this is something you do not want to do the follow cmd can work in place node ./meth/meth.js db:all in the root directory.
 
 ```sh
 meth dbAll:source
@@ -562,7 +566,24 @@ meth clean:all
 
 ## Project Roadmap
 
-Contains most recent roadmap list. Does not include items that have already been completed, which can be found in the database / on the site: [Roadmap](https://github.com/8an3/AutomotiveCRM/blob/main/TODO.md)
+<details closed>
+<summary>Roadmap</summary>
+- Finish off turbo repo recreation that would include all functionality currently missing
+- Segregate each dept into its own remix application
+- Create and complete client portal for dealer customers, will include a second login authentication for ease of use for dealer clients as this will ease the burden for account creation and memorizing password
+- Client portal will include appointment scheduler for both sales and service ( to allow the client to schedule their own appointments ), part and accessories order, sales purchases and service appointment status updates in real time, service wait times viewer, customer ping system once service unit is ready ( reminiscent of restaraunts with people waiting for tables with the "pucks" the give out, but on the clients portal service dashboard, which would also include est completion times ) and much more
+- Payment processing through application, this will not be included till the costs are offset by generated revenue. Once inlcuded dealer clients will be able to place deposits on units after hours, pay for bills at their leisure ( for example if they drop off their unit for a service 2 - 3 days out, and go on vacation or extended service vists ie engine replacement and the customers isnt expected to pick up the second the service is completed. ) Will also enable sales staff to take deposits even when their aren't enough terminals avaialable, PAC, service depts to easily take payments without credit card machines, etc.
+- Correct bugs in newly designed service scheduler ( This feature design will be an industry first. )
+- Finish off dev control panel ( as this has been put on the backburner to focus on the dealers side of the app ) which would enable remote control of all dealers databases ( as each dealer will have their own database ), automate dealer intake, including but not limited dealer server and database creation that would send all critical data points automatically to just signed up dealer removing the need for system admins to administer this process
+- Implement a wide variety of ai assisted tools including but not ltd too, sales emails, calls, text message scripting, sales analysis and projection including setting realistic goals for sales people and dept along with the other depts, in app voice to text generation, and much more.
+- Create and test in house infastructure / server option to add to on the cloud option ( Only available option currently ) to allow dealers to continued access even if internet services drop do to various reasons
+- Auto print unit signs from the unit ui
+- BDC Center 
+- Finalize sales follow-up automation, again different implmentation from current industry standard making it polarizing experience as far as end user experience is concerned.
+- A cross-platform Ad Manager designed to serve all departments, ensuring seamless campaign management across the organization
+- Backburner: redesign data loading across app in congurant with how each job role ingest data, would allow shorter load times and less loading bottle necks
+- Blue book implementation: Currently available market options have huge pay wall. Will be implemented once enough dealers sign up for the app to cover large barrier of cost of entry 
+</details>
 
 ## Challenges & Solutions
 
@@ -612,11 +633,11 @@ And because the merge happened before it was built by remix, it all works perfec
    git commit -m 'Implemented new feature x.'
    ```
 6. **Push to github**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
+  
 7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+8. **Review**: Post in [new feature implementation](https://github.com/8an3/OpinionatedAutomotiveDealerCRM) with detailed overview of the feature. Include the break down of the process, how it is improved over the current implementation ( if one currently exists ), go over designed process that will save time for the end users day to day responsibilties in their role and / or improved end user experience. Any feature posted without the latter will not be considered. 
+
+For example: New service appointment scheduler. Current industry standard is manually creating calendar appointments. New feature would take in hours needed to complete the job, multiply appointment time frame by technician multiplier ( Not all techs are created the same, one tech will complete jobs with a multiplier of 0.85, where others will have a 1.25 multiplier, these multiplier will be adjusted by service manager in service manager dashboard), will also sort by technician brand specialty for multi brand dealers, and provide a list of avaialable dates, by technician and accomdate for technician work schedule including break times, start and end times and etc. Automatically finding the correct dates and times to accomadate service visit and present the lists to the end user. In so doing, this would allow service writers to focus on other key parts of the job instead of constantly shifting and editing appointments manually. Bringing the overall process time from 3-60 minutes to a couple of seconds, no matter the variables at the time of scheduling.
 </details>
 
 ---
