@@ -430,6 +430,9 @@ Before getting started with DSA, ensure your runtime environment meets the follo
 
 ## Installation
 
+<details closed>
+<summary>Details... </summary>
+
 Install DSA using one of the following methods:
 
 **Build from source:**
@@ -487,6 +490,8 @@ meth push:git
 meth upgrade:patch
 ```
 
+</details>
+
 ## Usage
 
 Once deployed, you will have access to a demo version of the CRM software to test. There are several accounts to try out with varying levels of access to different parts of the application:
@@ -513,6 +518,9 @@ Once deployed, you will have access to a demo version of the CRM software to tes
 > 
 > By creating it ourselves we wanted to take it a step further. We wanted to segregate our code, for several reasons, but at deployment keep it all under one deployment when its pushed to vercel. Thankfully on our first attempt, we were able to take 5 remix projects, and deploy it as one single application on vercel. Since our recreation worked so well for our use case, we called it meth. It's like turbo repo, but on meth and > does far more for us while making our day to day just a little bit easier.
 > 
+
+<details closed>
+<summary>Details... </summary>
 
 Commands:
 - To launch the interactive ui for when you can't remember every command.
@@ -564,10 +572,13 @@ meth clean:app
 meth clean:all
 ```
 
+</details>
+
+
 ## Project Roadmap
 
 <details closed>
-<summary>Roadmap</summary>
+<summary>Details... </summary>
 
 - Finish off turbo repo recreation that would include all functionality currently missing
 
@@ -603,6 +614,9 @@ meth clean:all
 
 ## Challenges & Solutions
 
+<details closed>
+<summary>Details...</summary>
+
 For the ones that are curious about the custom Turbo.Repo / Turbo.Build and how to take any number of remix projects and come out with a single build application. 
 
 The merge has to be done before the build process starts. 
@@ -614,6 +628,8 @@ Vercel for some reason, will get bitchy about this from time to time. Haven't be
 As each project represents a different part of the application, they already had unique parent routes so this was an easy thing to check off when merging. Finally, each of the projects were going to have different libraries. There was no way around this, in the script / or manually copy and paste, scrap all the package.json's, add all unique values to the dependencies and if there were any changes made, reinstall / install the libraries. 
 
 And because the merge happened before it was built by remix, it all works perfectly fine no matter how large the project is or how many projects you cram into one.
+
+</details>
 
 ---
 
@@ -627,8 +643,8 @@ And because the merge happened before it was built by remix, it all works perfec
 
 <br>
 <p align="left">
-   <a href="https://github.com{/8an3/OpinionatedDealerCRM/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=8an3/OpinionatedDealerCRM">
+   <a href="https://github.com{/8an3/OpinionatedAutomotiveDealerCRM/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=8an3/OpinionatedAutomotiveDealerCRM">
    </a>
 </p>
 <details closed>
@@ -654,6 +670,7 @@ And because the merge happened before it was built by remix, it all works perfec
 8. **Review**: Post in [new feature implementation](https://github.com/8an3/OpinionatedAutomotiveDealerCRM) with detailed overview of the feature. Include the break down of the process, how it is improved over the current implementation ( if one currently exists ), go over designed process that will save time for the end users day to day responsibilties in their role and / or improved end user experience. Any feature posted without the latter will not be considered. 
 
 For example: New service appointment scheduler. Current industry standard is manually creating calendar appointments. New feature would take in hours needed to complete the job, multiply appointment time frame by technician multiplier ( Not all techs are created the same, one tech will complete jobs with a multiplier of 0.85, where others will have a 1.25 multiplier, these multiplier will be adjusted by service manager in service manager dashboard), will also sort by technician brand specialty for multi brand dealers, and provide a list of avaialable dates, by technician and accomdate for technician work schedule including break times, start and end times and etc. Automatically finding the correct dates and times to accomadate service visit and present the lists to the end user. In so doing, this would allow service writers to focus on other key parts of the job instead of constantly shifting and editing appointments manually. Bringing the overall process time from 3-60 minutes to a couple of seconds, no matter the variables at the time of scheduling.
+
 </details>
 
 ---
@@ -669,7 +686,7 @@ This project is protected under the MIT License. For more details, refer to the 
 
 If your a software providor and process engineering isn't something you have focused on or even thought about, reach out. I'd be more than happy to help in this, because we desperatly need companies to atleast think about it before they code. We know that once the code is good and it works, it gets shipped never to be looked at again, unless a severe enough bug is found that needs to be fixed. With each table I will provide the EXACT math used in the code, and you can even check it if you still don't beleive it after that. The numbers get that out of hand, that quickly. I spent a week going over these numbers because... I could not accept the answers to be my reality. The worst part is, it's entirely out of your control as the employee... but it is 100% entirely in your control as a dev.
 
-### To prove how IMPORTANT this is I'll include a part of a presentation I have.
+### To prove how IMPORTANT this is, I'll include parts of a presentation with notes.
 We will go over a couple pain points...
 - Setting Appointments
 - Money Wasted Through Salaries
@@ -677,6 +694,9 @@ We will go over a couple pain points...
 - Other Positions
 - CRM Provider
 - Per Month Savings
+
+<details closed>
+<summary>Details...</summary>
 
 ### Setting Appointments
 Now I bring this point up because this is... what got me to continue going down the rabbit hole and creating an entire opinionated dealer crm. And the numbers scare me every time I look at them. To bring you up to speed, as a sales person your sole focus should be, making calls and that is literally it. CRMs have designed... time wasting games and processes on what needs to be done in order to complete it in the system and go about your day. You need to:
@@ -740,7 +760,7 @@ One dealer owner, in one year... over 3 mill. All because of shitty process engi
 
 ---
 
-## Missed Sales Oppurtunities
+### Missed Sales Oppurtunities
 Now... this next section... these are extremly fucking low numbers to what is actually obtained in dealers. Just to make it beleiveable, I had no choice. 
 
 | Average Month For A Dealer | Days Lost Per Sales Person | Sales Lost Per Sales Person | Sales People | Sales Lost Across Team | 
@@ -755,17 +775,19 @@ Wont say much other then this, there are dealers out there who don't even hit 45
 ---
 
 
-## Other Positions
+### Other Positions
 | Employees |   Avg Salary   | Time Wasted Per Employee / hrs| Total Time Wasted / Day / team hrs | Total Cost Per Year | 
 | ---------- | ----------------- | -------------- | ------------------ | -------------------------------- | 
 |     18     |     55000      |        2     |      36.00 /hrs         | $247500.00   |
 
 Again wont say much but... I know a ton of employees in other depts... where 2 hours a day wasted, are like fucking rookie numbers.
 
+
+
 ---
 
 
-## CRM Provider
+### CRM Provider
 And this number of clients this providor has, was heavily marketed.
 
 First scenario: 
@@ -788,7 +810,7 @@ Luckily, I saw one more digit in there, than what's actually there. So 30 tril. 
 ---
 
 After that depressing wave of information, let's end on a more positve note and see how much a year each dealer can save. It's so much that, just in savings and not considering all the other benefits, in which there is a huge laundry list comapred to every crm on the market. That it would be detremtental to the business, for the dealer, owner and staff... to not atleast try to switch.
-## Per Month Savings
+### Per Month Savings
 
 | Dealer Sales Assistant | Competitor | Difference / Month | Difference / Year | Total Cost Per Year| 
 | ---------------------- | ---------- | ------------------ | ------------------ | -------------------------------- | 
@@ -807,6 +829,6 @@ We left off at:
 Now can you see how easy it would to get to $30,256,875,000.00, it doesn't take much. If you had a bad string of dealers that did horribly, it would really help push that number up. 
 
 
-
+</details>
 
 
