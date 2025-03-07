@@ -532,11 +532,11 @@ Once deployed, you will have access to a demo version of the CRM software to tes
 
 </details>
 
+### Commands:
 
 <details closed>
 <summary>Details... </summary>
 
-Commands:
 - To launch the interactive ui for when you can't remember every command.
 ```sh
 meth u:i
