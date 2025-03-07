@@ -5,25 +5,24 @@
 #### Unmatched, industry-disrupting, opinionated dealer CRM!
 
 <p align="left">
-	<img src="https://img.shields.io/github/license/8an3/OpinionatedCRM?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=00ADD8" alt="license">
-	<img src="https://img.shields.io/github/last-commit/8an3/OpinionatedCRM?style=for-the-badge&logo=git&logoColor=white&color=00ADD8" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/8an3/OpinionatedCRM?style=for-the-badge&color=00ADD8" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/8an3/OpinionatedCRM?style=for-the-badge&color=00ADD8" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=00ADD8" alt="license">
+	<img src="https://img.shields.io/github/last-commit/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&logo=git&logoColor=white&color=00ADD8" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&color=00ADD8" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/8an3/OpinionatedAutomotiveDealerCRM?style=for-the-badge&color=00ADD8" alt="repo-language-count">
 </p>
 	
 
 #### Built with:
 
-<p align="left">
-	<img src="https://img.shields.io/badge/Remix-000000.svg?style=for-the-badge&logo=remix&logoColor=white" alt="remix">
-	<img src="https://img.shields.io/badge/Vercel-000000.svg?style=flat-square&logo=vercel&logoColor=white" alt="Docker">
-	<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="GitHub%20Actions">
-</p>
+![Remix](https://img.shields.io/badge/Remix-000000.svg?style=for-the-badge&logo=remix&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![TurboRepo](https://img.shields.io/badge/TurboRepo-Enabled-00ADD8?style=for-the-badge&logo=turborepo&logoColor=white)
+
 <br>
 
 Notice: Code to be open sourced once application has been completed.
 
-Our advanced production capabilities put us at least a decade ahead of the competition. The level of efficiency, innovation, and infrastructure we've built isnt something that can be replicated overnight. It would take others at least 10 years to match our scale, quality, and output—making us the clear and only choice for anyone serious about reliability and long-term success.
+Our advanced production capabilities put us ahead of the competition. The level of efficiency, innovation, and infrastructure we've built isnt something that can be replicated overnight. It would take others at least 10 years to match our scale, quality, and output—making us the clear and only choice for anyone serious about reliability and long-term success.
 
 ## [TOC]
 
@@ -46,7 +45,7 @@ XIV. [](#)
     
 
 Links:
-- Repo: [https://github.com/8an3/OpinionatedCRM](https://github.com/8an3/OpinionatedCRM)
+- Repo: [https://github.com/8an3/OpinionatedAutomotiveDealerCRM](https://github.com/8an3/OpinionatedAutomotiveDealerCRM)
 - Demo site: [https://www.dealersalesassistant.ca](https://www.dealersalesassistant.ca/items/home)
 
 ## Goal
